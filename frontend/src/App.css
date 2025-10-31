@@ -1,0 +1,39 @@
+/* App Container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+/* Desktop (> 968px) */
+@media (min-width: 969px) {
+  .main-content {
+    margin-left: 280px;
+  }
+}
+
+/* Tablet and Mobile (≤ 968px) */
+@media (max-width: 968px) {
+  .main-content {
+    margin-left: 0;
+    margin-top: 70px;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .main-content {
+    margin-top: 65px;
+  }
+}
